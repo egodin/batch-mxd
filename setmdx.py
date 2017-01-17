@@ -1,5 +1,5 @@
 # Program Name = setmdx.py
-# Version 0.1
+# Version 0.1a
 # Date = 17/01/2017
 # Author = Etienne Godin
 # Usage = This program was prepare to bulk update ESRI's Arcmap files (*.mxd)
@@ -17,21 +17,21 @@ import arcpy, os
 # Set working path.
 # This is the root directory where the search for ArcGIS *.mxd file would start.
 # This search is recursive.
-path = r"C:\archive\postdoc\uwo\DEVON"
+path = r"C:\your\path\here"
 
 # Set default author name.
 # Possible values for chgAuthor is True or False
 # If chgAuthor is set to True, a valid string must be assigned to author
 # author can be empty to delete existing values (author = "")
-chgAuthor = True
-author = "Etienne Godin"
+chgAuthor = False
+author = "Your Name"
 
 # Set default tag. Tags can be separated by a comma if there is more than one.
 # Possible values for chgTags is True or False
 # If chgTags = True, a valid string must be assigned to tags
 # tags can be empty to delete existing values (tags = "")
-chgTags = True
-tags = "UWO,CPSX,Devon,Haughton"
+chgTags = False
+tags = "project,map,projection"
 
 # Thumbnails maintenance. The following values are allowed for refThumbs:
 # 0 do nothing
